@@ -54,6 +54,10 @@ plt.show()
     <img src="https://www.shutterstock.com/image-vector/types-correlation-scatter-plot-positive-260nw-2140738797.jpg" alt="Correlation Scatter Plot" />
 </div>
 
+<p align="center">
+    <img src="https://www.shutterstock.com/image-vector/types-correlation-scatter-plot-positive-260nw-2140738797.jpg" alt="Correlation Scatter Plot" />
+</p>
+
 
 
 
