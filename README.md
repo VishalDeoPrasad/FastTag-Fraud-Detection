@@ -61,11 +61,35 @@ sns.regplot(x='Transaction_Amount', y='Amount_paid', data=data)
 plt.show()
 ```
 
-![Alt text](https://www.kaggleusercontent.com/kf/159413024/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0.._bJ1ea4NjwXtG20043kxgA.dDAEtNVw1RYj8fv0Xdm8a02mNFi_jrLxm9Rd4mF1usGg8BS4w74MNlDwJ0E1Wx2CpO0TdbwKBTUGlK8jyUtsyUqkG4UhhrUwU7i0Om6o6zwwamj_CNzneGUCgHIW4mqdM6zCZdvXasD8vaaRqBCfvXf2L2lg-AX-ZhaT9dh5AE4FZXsOCc5zkvwsxMHUDIAnIe4tOOKDzIRmyAMzFTHaNgye-qbmwOUDUCMuISWhdUI32_4GkSpio7-oo9m_F7V12_2yAku0-c_HqzNwB3j0hG8mzXiMfTXoYm7lN6h8w4o6Z24CN4ZE1HHh_AINw5J-gFkkcNgrakPfHXpNiF-Yz-QcSBT9MIw7ESSs-PUlhbzx7L9Wr5fClaejTopvVCk9HJIX-7pFOEEvSMUVLharMyY22I_Kez8itUdwM9SfX-9Td2Jor7wO3SKlLQ3imJJ5yTH9VyeRe9kDIInAzo9rBEZDFvjEGeC5Zd7Aou5GiRFKdZSR7lG9QMPgt75FH-l2y1mwQB00Kp96el2CyZgDiuA1fTvBykr9H4PzZiXAbu8KXeaSP3rD64iIGrBdC2rWTkG84eygXoABvlNTfON1R_ifyLtSwPKf05l-fz_6tyZZeDSXT1RQVLdCgO-vW11x-EXnkmF8Tkyzcr0_JzqAYVe9vGDfQoB6phhnaOTvOtDTrfhUWo3RCmcxhxCM3IIc.a0jUyrnj2PmNftFyRUqhxA/__results___files/__results___17_0.png)
-
 <p align="center">
     <img src="https://www.kaggleusercontent.com/kf/159413024/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0.._bJ1ea4NjwXtG20043kxgA.dDAEtNVw1RYj8fv0Xdm8a02mNFi_jrLxm9Rd4mF1usGg8BS4w74MNlDwJ0E1Wx2CpO0TdbwKBTUGlK8jyUtsyUqkG4UhhrUwU7i0Om6o6zwwamj_CNzneGUCgHIW4mqdM6zCZdvXasD8vaaRqBCfvXf2L2lg-AX-ZhaT9dh5AE4FZXsOCc5zkvwsxMHUDIAnIe4tOOKDzIRmyAMzFTHaNgye-qbmwOUDUCMuISWhdUI32_4GkSpio7-oo9m_F7V12_2yAku0-c_HqzNwB3j0hG8mzXiMfTXoYm7lN6h8w4o6Z24CN4ZE1HHh_AINw5J-gFkkcNgrakPfHXpNiF-Yz-QcSBT9MIw7ESSs-PUlhbzx7L9Wr5fClaejTopvVCk9HJIX-7pFOEEvSMUVLharMyY22I_Kez8itUdwM9SfX-9Td2Jor7wO3SKlLQ3imJJ5yTH9VyeRe9kDIInAzo9rBEZDFvjEGeC5Zd7Aou5GiRFKdZSR7lG9QMPgt75FH-l2y1mwQB00Kp96el2CyZgDiuA1fTvBykr9H4PzZiXAbu8KXeaSP3rD64iIGrBdC2rWTkG84eygXoABvlNTfON1R_ifyLtSwPKf05l-fz_6tyZZeDSXT1RQVLdCgO-vW11x-EXnkmF8Tkyzcr0_JzqAYVe9vGDfQoB6phhnaOTvOtDTrfhUWo3RCmcxhxCM3IIc.a0jUyrnj2PmNftFyRUqhxA/__results___files/__results___17_0.png" alt="Correlation Scatter Plot" width="400" height="300" />
 </p>
+
+## Visulaize the Metrices
+```python
+import matplotlib.pyplot as plt
+
+metrics = ['Accuracy', 'Precision', 'Recall', 'F1 Score']
+values = [accuracy, precision, recall, f1]
+
+# Define custom colors for bars and text
+bar_colors = ['skyblue', 'lightgreen', 'lightcoral', 'lightsalmon']
+plt.bar(metrics, values, color=bar_colors)
+
+# Adding values on top of each bar
+for i, v in enumerate(values):
+    plt.text(i, v + 0.05, str(round(v, 2)), ha='center', va='bottom')
+
+plt.ylabel('Score')
+plt.title('Model Metrics')
+plt.ylim(0, 1.4)
+plt.show()
+```
+<p align="center">
+    <img src="https://www.kaggleusercontent.com/kf/159711698/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..Qb3jzDUGuvwN9AqVXKDdIw.6o1LTHu6itZlCGofOw-7GdUxZ9dDjzOs3EwtSKY8k44IEKKbftaZbCl82QhuDFby5CfidY3AnDDVJnCTeVbofIvMWiIFYIrx8c3om1xB4ViCybIvbIpCZHhPwBEu1OJapyytxJ0FGztihYJJirdWV9tdJdMZKc4rO8TWVoGlPmNF434RB7x9nfSrKP8cYqPjCU5sXHNgc5G4yRC7BdjP_Usrg7jSM7ECEwpew5O-ascjtnnfxJ_9FViSfLx5lxVQWMwREWN-K1gFBqVjD6IEBG-OYaVaZFXZhsMu-PEiVqH7ULbXm-brZ67jz1bUsBCoix9wZ7sL4Y9wuW6yZTZ5KfZFpKyQ6kjvvUihbNgGIcY5o-zRObiAFPjp1h9dXXYFGmrQ7Yo0xtom0BgmKQudGr3SGK4zhmSJPGI_Mo-xjDJ2YUd3kKZgpI9s6nETDwje4sKnvs7XpSNlQHKePrYn3NZyBqjp7_9bnDRH5u3y7mmdOSgwNeLmbFlKBKSbVkITCIPiG2CK3gSXnYvDtiq74-3uFjeDDB8kyVkveozBW9Jd97r0QPP6SbhERvA7BfjGi700IMAww9BDR1M6CPqAiEgkGUu7Khzr8rvUuvqru7OYPrnzvbolW4Dw9im7Ct7v7G_Y8d8U6uwPISPd0HixFZSOEGxkBHjw1Kqp1PyU01c.e-3VIegNUXTA_qyTbJBjkA/__results___files/__results___35_0.png" alt="Correlation Scatter Plot" width="400" height="300" />
+</p>
+
+
 
 
 
