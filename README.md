@@ -50,13 +50,18 @@ plt.grid(True)
 plt.show()
 ```
 
-<div style="text-align:center">
-    <img src="https://www.shutterstock.com/image-vector/types-correlation-scatter-plot-positive-260nw-2140738797.jpg" alt="Correlation Scatter Plot" />
-</div>
-
 <p align="center">
     <img src="https://www.shutterstock.com/image-vector/types-correlation-scatter-plot-positive-260nw-2140738797.jpg" alt="Correlation Scatter Plot" />
 </p>
+
+### Another way to plot regression line
+```python
+# Scatter plot with regression line between 'Transaction_Amount' and 'Amount_paid'
+sns.regplot(x='Transaction_Amount', y='Amount_paid', data=data)
+plt.show()
+```
+
+![Alt text](https://www.kaggleusercontent.com/kf/159413024/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0.._bJ1ea4NjwXtG20043kxgA.dDAEtNVw1RYj8fv0Xdm8a02mNFi_jrLxm9Rd4mF1usGg8BS4w74MNlDwJ0E1Wx2CpO0TdbwKBTUGlK8jyUtsyUqkG4UhhrUwU7i0Om6o6zwwamj_CNzneGUCgHIW4mqdM6zCZdvXasD8vaaRqBCfvXf2L2lg-AX-ZhaT9dh5AE4FZXsOCc5zkvwsxMHUDIAnIe4tOOKDzIRmyAMzFTHaNgye-qbmwOUDUCMuISWhdUI32_4GkSpio7-oo9m_F7V12_2yAku0-c_HqzNwB3j0hG8mzXiMfTXoYm7lN6h8w4o6Z24CN4ZE1HHh_AINw5J-gFkkcNgrakPfHXpNiF-Yz-QcSBT9MIw7ESSs-PUlhbzx7L9Wr5fClaejTopvVCk9HJIX-7pFOEEvSMUVLharMyY22I_Kez8itUdwM9SfX-9Td2Jor7wO3SKlLQ3imJJ5yTH9VyeRe9kDIInAzo9rBEZDFvjEGeC5Zd7Aou5GiRFKdZSR7lG9QMPgt75FH-l2y1mwQB00Kp96el2CyZgDiuA1fTvBykr9H4PzZiXAbu8KXeaSP3rD64iIGrBdC2rWTkG84eygXoABvlNTfON1R_ifyLtSwPKf05l-fz_6tyZZeDSXT1RQVLdCgO-vW11x-EXnkmF8Tkyzcr0_JzqAYVe9vGDfQoB6phhnaOTvOtDTrfhUWo3RCmcxhxCM3IIc.a0jUyrnj2PmNftFyRUqhxA/__results___files/__results___17_0.png)
 
 
 
