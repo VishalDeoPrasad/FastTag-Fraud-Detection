@@ -50,7 +50,10 @@ plt.grid(True)
 plt.show()
 ```
 
-![Alt text](https://www.shutterstock.com/image-vector/types-correlation-scatter-plot-positive-260nw-2140738797.jpg)
+<div style="text-align:center">
+    <img src="https://www.shutterstock.com/image-vector/types-correlation-scatter-plot-positive-260nw-2140738797.jpg" alt="Correlation Scatter Plot" />
+</div>
+
 
 
 
