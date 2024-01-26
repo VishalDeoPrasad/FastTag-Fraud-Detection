@@ -121,6 +121,17 @@ plt.show()
     <img src="https://www.kaggleusercontent.com/kf/159711698/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ijLEroIcw0NWKkK1HQyHtg.PgwQx2RON_fG3AD6KNxgZx-n3TYA6I4g0IUUiBOmhuWPQcv7XlkDwU38gRLlGdkb2xGdV49oF_vwQeYXgoIiYwi9v2dZdhEh7j59732sagGr9eNVKOVo4x9BmO2IyaR4yRLTvDqyHRtPbVep8p9bwops8pZULuQ0Xfi7ONB_tbQNIA32A8b_lqNNr8XjVurymjgHUHkAH-5dPXaJl3giU9CektNs_NBy1e7FYehAqQRS4PGsBwgLYh6e4sW9lJx7PazH-I-d1Oluqhquck1xnIlaj3zQd7NiYXK6SHep_YvUSsje0_08554z4lKMCl_FwsFwfXCgPQrqBdwiRh6BIoOsL2mC5YOcmPxkXcX1Z1-ZOKb6VhE_42aQexKFoqJ01yhLzdYVSG-ed_ssj7nqPBcCvSkFn7_LzDbP9XAR1x_x7EmAyTERDQ8loQWBECk_ZWOc_hne1PhEVeCbtIdX1jZt0S3hMfvCKfN2FuQK3lk8RL3uRuPi3VWQc0d9OFNm1PZAUq8YbIrA9bbaTOkvGfgOCQn8vnJUDCwcwWtH1_rfqf1QRYh45nOVhJdSU2a0G9qBQW38aYL08NPXuIr2bCIO1nIMdIH_rKJIWxZ7TTUSeQh6ZKyxXTwXn-sO2uPEQvHPt_S5yMf1BSvOwyOH-HgZ-gHBOTRtIsWvkXjLdew.gB88i88htQtgUYsJ7KLlSw/__results___files/__results___18_0.png" alt="Correlation Scatter Plot" width="400" height="300" />
 </p>
 
+### What metrics do you use to evaluate the performance of you models?
+🎯 Accuracy
+⚖️ Precision
+🔄 Recall
+📐 F1 Score
+📉 Mean Squared Error (MSE)
+📈 Area Under Curve (AUC)
+⏱️Latency
+🔢 Root Mean Squared Error (RMSE)
+📋ROC Curve
+
 
 
 
